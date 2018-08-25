@@ -1,0 +1,63 @@
+{
+  "name": "@dip-in-milk/snake-pui",
+  "version": "1.0.0",
+  "description": "Snake Game Pixijs UI",
+  "main": "dist/index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "jest",
+    "build": "webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dip-in-milk/snake-pui.git"
+  },
+  "private": true,
+  "keywords": [
+    "snkae",
+    "game",
+    "pixijs",
+    "ui"
+  ],
+  "author": "Stefan Tenev <st.teneff@dip-in.milk.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dip-in-milk/snake-pui/issues"
+  },
+  "homepage": "https://github.com/dip-in-milk/snake-pui#readme",
+  "devDependencies": {
+    "@babel/core": "^7.0.0-rc.2",
+    "@babel/plugin-transform-runtime": "^7.0.0-rc.2",
+    "@babel/preset-env": "^7.0.0-rc.2",
+    "@babel/register": "^7.0.0-rc.3",
+    "@babel/runtime": "^7.0.0-rc.2",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-loader": "^8.0.0-beta.6",
+    "coveralls": "^3.0.2",
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "jest": "^23.5.0",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    },
+    "testEnvironment": "node",
+    "testMatch": [
+      "<rootDir>/test/spec/**/*.js"
+    ],
+    "verbose": true
+  }
+}
